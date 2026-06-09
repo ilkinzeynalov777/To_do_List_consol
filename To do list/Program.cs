@@ -8,7 +8,8 @@ while (option != "e")
     Console.WriteLine("1. Add a task");
     Console.WriteLine("2. Remove a task");
     Console.WriteLine("3. View tasks");
-    Console.WriteLine("4. Exit");
+    Console.WriteLine("4. Is the task completed?");
+    Console.WriteLine("5. Exit");
     option = Console.ReadLine();
     if (option == "1")
     {
@@ -37,7 +38,20 @@ while (option != "e")
             Console.WriteLine($"{i + 1}. {toDoList[i]}");
         }
     }
-    else if (option != "4")
+    else if(option == "4")
+    {
+        for (int i = 0; i < toDoList.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. {toDoList[i]}");
+        }
+        int completednum = int.Parse(Console.ReadLine());
+        if(completednum > 0 && completednum <= toDoList.Count)
+        {
+            Console.WriteLine($"{completednum}. {toDoList[completednum - 1]} + completed");
+        }
+    }
+
+    else if (option != "5")
     {
         Console.WriteLine("Invalid option. Please try again.");
     }

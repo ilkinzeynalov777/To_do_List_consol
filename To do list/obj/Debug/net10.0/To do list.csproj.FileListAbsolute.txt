@@ -12,3 +12,4 @@ C:\Users\ILKIN.ZEYNALOV\source\repos\To do list\To do list\obj\Debug\net10.0\ref
 C:\Users\ILKIN.ZEYNALOV\source\repos\To do list\To do list\obj\Debug\net10.0\To do list.pdb
 C:\Users\ILKIN.ZEYNALOV\source\repos\To do list\To do list\obj\Debug\net10.0\To do list.genruntimeconfig.cache
 C:\Users\ILKIN.ZEYNALOV\source\repos\To do list\To do list\obj\Debug\net10.0\ref\To do list.dll
+C:\Users\ILKIN.ZEYNALOV\source\repos\To do list\To do list\obj\Debug\net10.0\To do list.sourcelink.json
