@@ -68,15 +68,37 @@ while (option != "e" && option != "6")
         {
             Console.WriteLine($"{i + 1}. {toDoList[i]}");
         }
-        Console.WriteLine("Enter the number of the task to edit:");
+        Console.WriteLine("1 . Enter the number of the task to edit:");
         int editNumber = int.Parse(Console.ReadLine());
-        if(editNumber > 0 && editNumber <= toDoList.Count)
-        {
-            Console.WriteLine("Enter the new task :");
-            string newTask = Console.ReadLine();
-            toDoList[editNumber - 1] = newTask;
-            Console.WriteLine("The change has been implemented");
-        }
+            if (editNumber > 0 && editNumber <= toDoList.Count)
+            {
+                Console.WriteLine("1 . Edit full task :");
+                Console.WriteLine("2 . Edit part of task :");
+                string newTask = Console.ReadLine();
+                
+            if(newTask == "1")
+            {
+                Console.WriteLine("Enter the new task : ");
+                toDoList[editNumber - 1] = newTask;
+                Console.WriteLine("The change has been implemented");
+            }
+
+            else if(newTask == "2")
+            {
+                Console.WriteLine("Current task : " + toDoList[editNumber-1]);
+                Console.WriteLine("Enter the word/part to replace :");
+                string oldPart = Console.ReadLine();
+                Console.WriteLine("Enter the new word/part :");
+                string newPart = Console.ReadLine();
+                toDoList[editNumber - 1] = toDoList[editNumber - 1].Replace(oldPart,newPart);
+            }
+            Console.WriteLine("Changed completed");
+
+
+            }
+        
+        
+       
     }
 
 

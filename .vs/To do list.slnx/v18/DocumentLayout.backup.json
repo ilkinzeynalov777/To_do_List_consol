@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To do list\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\to do list\\To_do_List_consol\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9EEA6616-DBDA-7027-038D-FA312101B2D7}|To do list\\To do list.csproj|c:\\users\\ilkin.zeynalov\\source\\repos\\to do list\\to do list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9EEA6616-DBDA-7027-038D-FA312101B2D7}|To do list\\To do list.csproj|c:\\users\\user\\desktop\\to do list\\to_do_list_consol\\to do list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9EEA6616-DBDA-7027-038D-FA312101B2D7}|To do list\\To do list.csproj|solutionrelative:to do list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -23,11 +23,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To do list\\To do list\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\to do list\\To_do_List_consol\\To do list\\Program.cs",
               "RelativeDocumentMoniker": "To do list\\Program.cs",
-              "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\To do list\\To do list\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\to do list\\To_do_List_consol\\To do list\\Program.cs",
               "RelativeToolTip": "To do list\\Program.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAADwv04AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAAwF4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-09T10:10:57.666Z",
               "EditorCaption": ""
@@ -37,9 +37,9 @@
               "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\Calculator_App\\Calculator_App\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\Calculator_App\\Calculator_App\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\ILKIN.ZEYNALOV\\source\\repos\\Calculator_App\\Calculator_App\\Form1.cs",
               "ToolTip": "C:\\Users\\ILKIN.ZEYNALOV\\source\\repos\\Calculator_App\\Calculator_App\\Form1.cs [Design]",
-              "RelativeToolTip": "..\\Calculator_App\\Calculator_App\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\ILKIN.ZEYNALOV\\source\\repos\\Calculator_App\\Calculator_App\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-08T07:32:21.027Z"
             }
