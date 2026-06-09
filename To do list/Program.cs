@@ -8,7 +8,7 @@ if (File.Exists("Tasks.txt"))
     toDoList = File.ReadAllLines("Tasks.txt").ToList();
 }
 
-while (option != "e" && option != "5")
+while (option != "e" && option != "6")
 {
 
     Console.WriteLine("What would you like to do?");
@@ -16,7 +16,8 @@ while (option != "e" && option != "5")
     Console.WriteLine("2. Remove a task");
     Console.WriteLine("3. View tasks");
     Console.WriteLine("4. Is the task completed?");
-    Console.WriteLine("5. Exit");
+    Console.WriteLine("5. To edit");
+    Console.WriteLine("6. Exit");
     option = Console.ReadLine();
     if (option == "1")
     {
@@ -61,8 +62,26 @@ while (option != "e" && option != "5")
         }
         File.WriteAllLines("tasks.txt", toDoList);
     }
+    else if(option == "5")
+    {
+        for(int i = 0; i < toDoList.Count; i++)
+        {
+            Console.WriteLine($"{i + 1}. {toDoList[i]}");
+        }
+        Console.WriteLine("Enter the number of the task to edit:");
+        int editNumber = int.Parse(Console.ReadLine());
+        if(editNumber > 0 && editNumber <= toDoList.Count)
+        {
+            Console.WriteLine("Enter the new task :");
+            string newTask = Console.ReadLine();
+            toDoList[editNumber - 1] = newTask;
+            Console.WriteLine("The change has been implemented");
+        }
+    }
 
-    else if (option != "5")
+
+
+    else if (option != "6")
     {
         Console.WriteLine("Invalid option. Please try again.");
         File.WriteAllLines("tasks.txt", toDoList);
