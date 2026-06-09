@@ -1,9 +1,16 @@
-﻿Console.WriteLine("Welcome to the to do list program");
+﻿using System.Diagnostics;
+
+Console.WriteLine("Welcome to the to do list program");
 List<string> toDoList = new List<string>();
 string option = "";
-
-while (option != "e")
+if (File.Exists("Tasks.txt"))
 {
+    toDoList = File.ReadAllLines("Tasks.txt").ToList();
+}
+
+while (option != "e" && option != "5")
+{
+
     Console.WriteLine("What would you like to do?");
     Console.WriteLine("1. Add a task");
     Console.WriteLine("2. Remove a task");
@@ -16,6 +23,7 @@ while (option != "e")
         Console.WriteLine("Enter a task to add:");
         string task = Console.ReadLine();
         toDoList.Add(task);
+        File.WriteAllLines("tasks.txt", toDoList);
     }
     else if (option == "2")
     {
@@ -29,6 +37,7 @@ while (option != "e")
         {
             Console.WriteLine("Invalid task number.");
         }
+        File.WriteAllLines("tasks.txt", toDoList);
     }
     else if (option == "3")
     {
@@ -37,6 +46,7 @@ while (option != "e")
         {
             Console.WriteLine($"{i + 1}. {toDoList[i]}");
         }
+        File.WriteAllLines("tasks.txt", toDoList);
     }
     else if(option == "4")
     {
@@ -47,13 +57,15 @@ while (option != "e")
         int completednum = int.Parse(Console.ReadLine());
         if(completednum > 0 && completednum <= toDoList.Count)
         {
-            Console.WriteLine($"{completednum}. {toDoList[completednum - 1]} + completed");
+            Console.WriteLine($"{completednum}. {toDoList[completednum - 1]} + is completed");
         }
+        File.WriteAllLines("tasks.txt", toDoList);
     }
 
     else if (option != "5")
     {
         Console.WriteLine("Invalid option. Please try again.");
+        File.WriteAllLines("tasks.txt", toDoList);
     }
 }
 
